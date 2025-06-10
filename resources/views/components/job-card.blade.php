@@ -1,19 +1,19 @@
-<div class="p-4 bg-white/5 rounded-xl flex flex-col text-center">
+<x-panel class="flex flex-col text-center">
     <div class="self-start text-sm">Employer name</div>
 
-    <div class="py-8 font-bold">
-        <h3>Job Title</h3>
-        <p>Salary</p>
+    <div class="py-8">
+        <h3 class="group-hover:text-blue-600 text-xl font-bold transition-colors duration-300">Job Title</h3>
+        <p class="text-sm mt-4">Salary</p>
     </div>
 
 
     <div class="flex justify-between items-center mt-auto">
         <div>
-            <x-tag>Tag</x-tag>
-            <x-tag>Tag</x-tag>
-            <x-tag>Tag</x-tag>
+            <x-tag size="small">Tag</x-tag>
+            <x-tag size="small">Tag</x-tag>
+            <x-tag size="small">Tag</x-tag>
         </div>
 
-        <img src="https://www.mahatmahome.gr/image/cache/no_image-40x40.png" alt="" class="rounded-xl"/>
+        <x-employer-logo :width="42" />
     </div>
-</div>
+</x-panel>
