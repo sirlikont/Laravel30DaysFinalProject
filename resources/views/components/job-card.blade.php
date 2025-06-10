@@ -9,9 +9,9 @@
 
             <div class="flex justify-between items-center mt-auto">
                 <div>
-                    <a fref="" class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-sm transition-colors duration-300">Tag</a>
-                    <a fref="" class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-sm transition-colors duration-300">Tag</a>
-                    <a fref="" class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-sm transition-colors duration-300">Tag</a>
+                    <x-tag>Tag</x-tag>
+                    <x-tag>Tag</x-tag>
+                    <x-tag>Tag</x-tag>
                 </div>
 
                 <img src="https://www.mahatmahome.gr/image/cache/no_image-40x40.png" alt="" class="rounded-xl"/>
