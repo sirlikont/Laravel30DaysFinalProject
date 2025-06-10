@@ -2,7 +2,7 @@
 
 ## 📌 Projektist
 
-See projekt on loodud Laracasti õppesarija "[30 Days to Learn Laravel 11](https://laracasts.com/series/30-days-to-learn-laravel-11)" lõpuprojektina.
+See projekt on loodud Laracasti õppesarja "[30 Days to Learn Laravel 11](https://laracasts.com/series/30-days-to-learn-laravel-11)" lõpuprojektina.
 
 🔗 **Harjutuste kood:** [Laravel30days](https://github.com/sirlikont/Laravel30days)  
 🔗 **Lõppprojekt:** [Laravel30DaysFinalProject](https://github.com/sirlikont/Laravel30DaysFinalProject)
@@ -35,7 +35,7 @@ php artisan migrate --seed
 
 # Käivita arendusserver
 php artisan serve
-
+```
 
 ## ✨ Autor
 
@@ -46,3 +46,4 @@ $author = [
     'email' => 'sirlikont@gmail.com',
     'github' => 'https://github.com/sirlikont'
 ];
+```
