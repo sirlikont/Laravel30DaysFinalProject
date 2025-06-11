@@ -21,7 +21,7 @@ class JobFactory extends Factory
             'employer_id'=>Employer::factory(),
             'title'=>fake()->jobTitle,
             'salary'=>fake()->randomElement(['10 000€', '50 000€', '100 000€', '150 000€']),
-            'slocation'=>fake()->randomElement(['Remote', 'Office', 'Hybrid']),
+            'location'=>fake()->randomElement(['Remote', 'Office', 'Hybrid']),
             'schedule'=>fake()->randomElement(['Full Time', 'Part Time']),
             'url'=>fake()->url,
             'featured'=>false,
