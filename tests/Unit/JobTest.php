@@ -20,4 +20,13 @@ class JobTest extends TestCase
 
         $this->assertTrue($job->employer->is($employer));
     }
+
+    public function test_job_can_have_tags()
+    {
+        $job = Job::factory()->create();
+
+        $job->tag('Frontend');
+
+        $this->assertCount(1, $job->tags);
+    }
 }
