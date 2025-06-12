@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Job;
 use App\Models\Tag;
-use App\Http\Requests\StoreJobRequest;
-use App\Http\Requests\UpdateJobRequest;
+use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
@@ -17,7 +16,7 @@ class JobController extends Controller
      */
     public function index()
     {
-        $jobs = Job::latest()->get()->groupBy('featured');
+        $jobs = Job::latest()->with(['employer', 'tags'])->get()->groupBy('featured');
 
         return view('jobs.index', [
             'jobs'=>$jobs[0],
@@ -37,7 +36,7 @@ class JobController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreJobRequest $request)
+    public function store(Request $request)
     {
         $attributes = $request->validate([
             'title' => ['required'],
